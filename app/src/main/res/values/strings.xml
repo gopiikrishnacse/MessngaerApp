@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MessngaerApp</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="us">\u0024</string>
+    <string name="Rs">\u20B9</string>
+</resources>

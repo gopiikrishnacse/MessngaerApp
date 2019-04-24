@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:background="@android:color/white"
+                                             xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:layout_height="200dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp" app:srcCompat="@android:drawable/star_on"
+            android:id="@+id/img_profile_deal"
+        app:civ_border_color="@color/colorPrimaryDark"
+        app:civ_border_width="2dp"
+            android:background="@drawable/drawale_square_corners_transparant"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp" android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+            android:tooltipText="Rashid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_username_deal_row" app:layout_constraintStart_toEndOf="@+id/img_profile_deal"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+            android:tooltipText=""
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:id="@+id/txtl_line1" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@+id/img_profile_deal" android:background="@color/colorPrimaryDark"/>
+    <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp" app:srcCompat="@android:drawable/star_big_on"
+            android:id="@+id/img_deal_pic_row"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/drawale_square_corners_transparant"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/img_profile_deal"/>
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:tooltipText="Product Details"
+            android:id="@+id/txt_deal_des_row" app:layout_constraintStart_toEndOf="@+id/img_deal_pic_row"
+            android:layout_marginLeft="12dp" android:layout_marginStart="12dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/img_profile_deal"/>
+    <TextView
+            android:tooltipText=""
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:id="@+id/txt_line2" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@+id/img_deal_pic_row" android:background="@color/colorPrimaryDark"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_chat_count_row" android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/img_deal_pic_row" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    <TextView
+            android:text="TextView"
+            android:tooltipText="Amazon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_deal_merchant" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintTop_toTopOf="@+id/txt_chat_count_row"/>
+
+    <TextView
+        android:id="@+id/txt_rate_discount_deal_row"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toEndOf="@+id/img_deal_pic_row"
+        app:layout_constraintTop_toBottomOf="@+id/txt_deal_des_row" />
+</android.support.constraint.ConstraintLayout>

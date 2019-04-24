@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="100dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp" app:srcCompat="@android:drawable/star_on"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/colorPrimaryDark"
+            android:id="@+id/img_latest_char_row" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="16dp" android:layout_marginStart="16dp" android:layout_marginTop="24dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_latestmg_username" app:layout_constraintStart_toEndOf="@+id/img_latest_char_row"
+            android:layout_marginLeft="12dp" android:layout_marginStart="12dp" android:layout_marginTop="12dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/txt_latestmsg_msg"
+            app:layout_constraintVertical_chainStyle="packed" android:textSize="16sp"
+            android:textColor="@android:color/black" android:textStyle="bold"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_latestmsg_msg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_latestmg_username"
+            android:layout_marginTop="5dp" app:layout_constraintStart_toEndOf="@+id/img_latest_char_row"
+            android:layout_marginLeft="12dp" android:layout_marginStart="12dp" android:textSize="14sp"/>
+</android.support.constraint.ConstraintLayout>
